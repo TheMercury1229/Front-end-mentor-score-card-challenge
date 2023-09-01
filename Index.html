@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://kit.fontawesome.com/73353ec0db.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+ *{
+  margin:0;
+  padding:0;
+  }
+ html,
+ body{
+ width:100%;
+ height:100%:
+ font-size:18px;
+ font-family:'Hanken Grotesk';
+  }
+  body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  }
+  .main-card{
+  margin-top:100px;
+  width:600px;
+  height:350px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;}
+ .left-main-div .section-heading{
+ font-size:1.5rem;
+ font-weight:600;
+ color:hsl(241, 100%, 89%);
+  margin-top:10px;
+  margin-bottom:20px;
+  text-align:center;}
+  .left-main-div{
+  width:50%;
+  border-radius:12px;
+  height:110%;
+  padding:25px 30px;
+  background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));}
+  .score-card{
+  background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  width:70%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  height:45%;
+  border-radius:50%;
+  margin:10px auto;
+  }
+  .left-main-div h3{
+  color:#fff;
+  margin-bottom:7px;
+  font-weight:700;
+  font-size:1.6rem;
+  text-align:center;}
+  .main-score{
+  font-size:3rem;
+  color:white;
+  font-weight:800;}
+  .small-score{
+  color:hsla(241, 100%, 89%,0.7);
+ }
+ .below-text{
+ font-size:1rem;
+ margin-bottom:10px;
+ text-align:center;
+ color:hsl(241, 100%, 89%);
+ }
+  .right-main-div{
+  width:60%;
+  box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius:0px 12px 12px 0px;
+  height:110%;
+  padding:25px 20px;
+  }
+  .right-main-div ul{
+  list-style-type:none;
+  padding:6px;}
+  .right-main-div ul .heading{
+  font-size:1.6rem;
+  font-weight:700;
+  color:hsl(224, 30%, 27%);
+  margin-bottom:18px;
+  }
+  .score-pad{
+  padding:10px;
+  font-weight:500;
+  font-size:0.9rem;
+  border-radius:9px;
+  margin:12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+} 
+.first-elem{
+color:hsl(0, 100%, 67%);
+background:hsla(0, 100%, 67%,0.1);}
+.second-elem{
+color:hsl(39, 100%, 56%);
+background:hsla(39, 100%, 56%,0.1);}
+.third-elem{
+color:hsl(166, 100%, 37%);
+background:hsla(166,100%,37%,0.1);}
+.fourth-elem{
+color:hsl(234, 85%, 45%);
+background:hsla(234, 85%, 45%,0.1)}
+.main-box{
+display:flex;
+align-items:center;
+gap:8px;} 
+.section-score{
+color:hsl(224, 30%, 27%);
+}
+.section-score span:first-child{
+font-size:1.2rem;
+font-weight:800;}
+.section-score span:last-child{
+color:hsla(224, 30%, 27%,0.6)
+}
+.btn{
+margin:25px 18px;
+width:90%;
+font-size:1.1rem;
+font-weight:800;
+padding:16px;
+border-radius:50px;
+border:none;
+background:hsl(224, 30%, 27%);
+color:white;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main-card">
+<div class="left-main-div">
+ <p class="section-heading"> Your Result</p>
+ <div class="score-card"> <span class="main-score">76</span>
+ <span class="small-score"> of 100</span>
+</div>
+ <h3> Great</h3>
+  <p class="below-text">You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+  <div class="right-main-div">
+ <ul> <li class="heading">Summary</li>
 
+ <li class="score-pad first-elem"><div class="main-box"><div><i class="fa-solid fa-bolt"></i></div><div>Reaction</div></div>
+ <div class="section-score"> <span>80</span> <span>/ 100</span></div></li>
+
+ <li class="score-pad second-elem"><div class="main-box"><div><i class="fa-solid fa-brain"></i></div> Memory</div>
+ <div class="section-score"><span>92</span> <span>/ 100</span></div></li>
+  
+
+  <li class="score-pad third-elem"><div class="main-box"><div><i class="fa-solid fa-message"></i></div>Verbal</div>
+<div class="section-score"> <span>61</span><span> / 100</span></div></li>
+
+  <li class="score-pad fourth-elem"><div class="main-box"><div><i class="fa-solid fa-eye"></i></div>Visual</div>
+<div class="section-score">  <span>72</span> <span>/ 100</span></div></li>
+
+  <li><button class="btn">Continue</button></li>
+  </ul>
+  </div>
+  </div>
+  
+</body>
+<!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hardy@126</a>.
+  </div>-->
+</html>
